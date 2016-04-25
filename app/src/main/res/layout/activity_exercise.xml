@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ExerciseActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/score"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/word"
+        android:layout_below="@+id/score" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="incorrect"
+        android:id="@+id/btnIncorrect"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/word"
+        android:layout_toEndOf="@+id/word"
+        android:layout_marginLeft="61dp"
+        android:layout_marginStart="61dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="correct"
+        android:id="@+id/btnCorrect"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btnIncorrect"
+        android:layout_toEndOf="@+id/btnIncorrect" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Exercise"
+        android:id="@+id/btnNewExercise"
+        android:layout_above="@+id/btnIncorrect"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
